@@ -6,5 +6,22 @@
 </head>
 
 <body>
+<?php
+session_start();
+	if($_SESSION['userid']){
+	
+		echo"hello";
+	
+	}
+	else{
+		header('location:../login.php');
+	
+	}
+
+
+?>
+
+
+
 </body>
 </html>

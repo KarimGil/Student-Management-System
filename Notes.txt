@@ -1,0 +1,12 @@
+- Admin 
+	-ID
+	-Username
+	-Password
+Student
+	-ID
+	-Roll No
+	-Name
+	-City
+	-Contant Number
+	-Standard
+	-Photo
