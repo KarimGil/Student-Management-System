@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dicotha/School/c3efd83a/css/style.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dicotha/School/c3efd83a/css/fonts/BloggerSans/BloggerSans-Light.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS Files/index.css" />
 	<!-- Add the slick-theme.css if you want default styling -->
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
 	<!-- Add the slick-theme.css if you want default styling -->
@@ -27,8 +28,8 @@
 		    <div class="navbar-nav menu-school">
 		      <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
 		      <a class="nav-item nav-link" href="#blog">Blog</a>
-		      <a class="nav-item nav-link" href="#classes">Student Details</a>
-		      <a class="nav-item nav-link" href="#location">Admin LOGIN!</a>
+		      <a class="nav-item nav-link" href="#student">Student Details</a>
+		      <a class="nav-item nav-link" href="login.php">Admin LOGIN!</a>
 		      
 		    </div>
 		  </div>
@@ -60,7 +61,7 @@
 				<div class="col-md-3" style="padding-top: 15px">
 					<img class="img-fluid" src="https://cdn.rawgit.com/dicotha/School/c3efd83a/img/square1.png">
 					<div class="titlePost">
-						Post Exemplo 1
+						Why to learn Arts?
 					</div>
 					<div class="resumePost float-left">
 						Lorem ipsum dolor sit 
@@ -73,7 +74,7 @@
 				<div class="col-md-3" style="padding-top: 15px">
 					<img class="img-fluid" src="https://cdn.rawgit.com/dicotha/School/c3efd83a/img/square2.png">
 					<div class="titlePost">
-						Post Exemplo 2
+						Making a Team
 					</div>
 					<div class="resumePost float-left">
 						Lorem ipsum dolor sit 
@@ -86,7 +87,7 @@
 				<div class="col-md-3" style="padding-top: 15px">
 					<img class="img-fluid" src="https://cdn.rawgit.com/dicotha/School/c3efd83a/img/square3.png">
 					<div class="titlePost">
-						Post Exemplo 3
+						Creating Your imagination
 					</div>
 					<div class="resumePost float-left">
 						Lorem ipsum dolor sit 
@@ -99,7 +100,7 @@
 				<div class="col-md-3" style="padding-top: 15px">
 					<img class="img-fluid" src="https://cdn.rawgit.com/dicotha/School/c3efd83a/img/square4.png">
 					<div class="titlePost">
-						Post Exemplo 4
+						Back to School
 					</div>
 					<div class="resumePost float-left">
 						Lorem ipsum dolor sit 
@@ -114,8 +115,34 @@
 		<!-- end blog -->
 
 <!--Start Student Information  -->
-  
+ <h3 class="title col" align="center" style="margin-top:50px" id="student">Student Information</h3>
+</center>
+<form>
+	<table width="70%" height="100px" align="center" border="1">
+		<tr>
+			<td align="left" class="title1">Select Standard </td>
+				<td> 
+					<select name="std" style="width:100%">
+                        <option value="1">Grade 7</option>
+                        <option value="2">Grade 8</option>
+                        <option value="3">Grade 9</option>
+                        <option value="4">Matric</option>
+                        <option value="5">Intermediate-(Part I)</option>
+                        <option value="6">Intermediate-(Part II)</option>
 
+
+					</select>
+              </td>
+	 </tr>
+	 <tr>
+		<td align="left" class="title1 ">Enter Roll No  </td>
+		<td><input type="text" name="rollno" required="required" style="width:100%"/></td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center"><input type="submit" name="submit" value="SHOW DETAILS" class="btn btn-outline" style="width:100%" style="color:#a5a5c3 !important"/></td>
+	</tr>
+	</table>
+</form>
 <!--End Student Information-->
 
 		<!-- About -->
