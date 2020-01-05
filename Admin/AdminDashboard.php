@@ -2,15 +2,43 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>Student Management System</title>
+<link rel="stylesheet" type="text/css" href="../CSS Files/style.css" />
 </head>
 
 <body>
+
+
+	<div class="title" align="center">
+		<h1> Welcome To Admin Dashboard</h1>
+        <a href="logout.php"><input type="submit" name="logout" value="Logout" class="logout_btn"></a>
+    </div>
+	
+    <div class="dashboard" align="center">
+    	<table>
+        	<tr>
+            	<td>1.</td>
+                <td><a href="addStudent.php">Add Student</a></td>
+            </tr>
+            <tr>
+            	<td>2.</td>
+                <td><a href="updateStudent.php">Update Student</a></td>
+            </tr>
+            <tr>
+            	<td>3.</td>
+                <td><a href="deleteStudent.php">Delete Student</a></td>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+</html>
 <?php
 session_start();
-	if($_SESSION['userid']){
+	if(isset($_SESSION['userid'])){
 	
-		echo"hello";
+		echo"";
 	
 	}
 	else{
@@ -20,8 +48,3 @@ session_start();
 
 
 ?>
-
-
-
-</body>
-</html>
