@@ -5,7 +5,7 @@
 <title>Untitled Document</title>
 </head>
 
-<body style="background-color:#FF0">
+<body>
 <?php include("titlehead.php");
 
 	session_start();
@@ -64,7 +64,10 @@ if(isset($_POST['submit']))
 	$city = $_POST['city'];
 	$contact = $_POST['number'];
 	$standard = $_POST['standard'];
-	$qry = "INSERT INTO `student`(`rollno`, `name`, `city`, `contact`, `standard`) VALUES ('$rollno','$name','$city','$contact','$standard')";
+	$imagename = $_FILES['image']['name'];
+	$tempname = $_FILES['image']['tmp_name'];
+	move_uploaded_file($tempname,"../Data Images/$imagename");
+	$qry = "INSERT INTO `student`(`rollno`, `name`, `city`, `contact`, `standard`,`image`) VALUES ('$rollno','$name','$city','$contact','$standard','$imagename')";
 	$run = mysqli_query($con,$qry);
 	if($run)
 	{
